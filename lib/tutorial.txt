@@ -1,0 +1,5 @@
+//1. paste this in BASH terminal 
+flutter pub add flutter_bloc equatable http shared_preferences loading_animation_widget && flutter pub get && carousel_slider && sliver_snap && image_picker
+
+
+Clorent_v2 is start from product_details card, and everything in here is stateless class, other than a function.

@@ -21,7 +21,7 @@ class SettingsScreen extends StatelessWidget {
         leading: IconButton(
             icon: Icon(
               Icons.arrow_back_ios,
-              color: _SettingsService.primaryColor,
+              color: SettingsService.primaryColor,
             ),
             onPressed: () {
               Navigator.pop(context);
@@ -30,7 +30,7 @@ class SettingsScreen extends StatelessWidget {
           'Settings', //give here appBar title
           style: TextStyle(
             // color: Colors.black,
-            color: _SettingsService.primaryColor,
+            color: SettingsService.primaryColor,
 
             // fontWeight: FontWeight.bold
             // fontSize: 15,
@@ -74,9 +74,9 @@ class ProfileCard extends StatelessWidget {
             children: [
               DisplayProfileWidget(
                 radiusScale: 0.13,
-                ringColor: _SettingsService.primaryColor.withOpacity(0.8),
-                gradient1: _SettingsService.primaryColor.withOpacity(0.8),
-                gradient2: _SettingsService.primaryColor.withOpacity(0.3),
+                ringColor: SettingsService.primaryColor.withOpacity(0.8),
+                gradient1: SettingsService.primaryColor.withOpacity(0.8),
+                gradient2: SettingsService.primaryColor.withOpacity(0.3),
               ),
               const SizedBox(width: 25),
               const _UserDetailsText()
@@ -100,7 +100,7 @@ class _UserDetailsText extends StatelessWidget {
         Text(
           'Rushi Creates',
           style: TextStyle(
-            color: _SettingsService.primaryColor,
+            color: SettingsService.primaryColor,
             fontWeight: FontWeight.bold,
             fontSize: 18,
             fontFamily: 'Poppins',
@@ -109,7 +109,7 @@ class _UserDetailsText extends StatelessWidget {
         Text(
           'rushi.creates@gmail.com',
           style: TextStyle(
-            color: _SettingsService.primaryColor,
+            color: SettingsService.primaryColor,
             fontSize: 12,
             fontFamily: 'Poppins',
           ),
@@ -148,13 +148,13 @@ class _SettingsTileWidget extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: Icon(
             icon,
-            color: _SettingsService.primaryColor,
+            color: SettingsService.primaryColor,
           ),
         ),
         title: Text(
           label,
           style: TextStyle(
-            color: _SettingsService.primaryColor,
+            color: SettingsService.primaryColor,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -168,7 +168,7 @@ class _SettingsTileWidget extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: Icon(
             Icons.arrow_forward_ios,
-            color: _SettingsService.primaryColor,
+            color: SettingsService.primaryColor,
           ),
         ),
       ),
@@ -228,7 +228,7 @@ class _LogoutTileStates extends StatelessWidget {
               TextButton(
                 child: Text(
                   "Logout",
-                  style: TextStyle(color: _SettingsService.dialogTextColor),
+                  style: TextStyle(color: SettingsService.dialogTextColor),
                 ),
                 onPressed: () {
                   BlocProvider.of<UserLodBloc>(context)
@@ -299,7 +299,7 @@ class _DeleteAccountTileStates extends StatelessWidget {
               TextButton(
                 child: Text(
                   "Delete permanently",
-                  style: TextStyle(color: _SettingsService.dialogTextColor),
+                  style: TextStyle(color: SettingsService.dialogTextColor),
                 ),
                 onPressed: () {
                   BlocProvider.of<UserLodBloc>(context)
@@ -318,7 +318,7 @@ class _DeleteAccountTileStates extends StatelessWidget {
 /*                                     //!                                    */
 /* -------------------------------------------------------------------------- */
 
-class _SettingsService {
+class SettingsService {
   static Color primaryColor = const Color.fromARGB(255, 106, 116, 250);
   static Color dialogTextColor = const Color.fromARGB(255, 15, 0, 71);
   // static Color primaryColor = Color.fromARGB(255, 0, 129, 90);

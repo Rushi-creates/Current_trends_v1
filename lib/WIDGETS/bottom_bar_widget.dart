@@ -4,7 +4,7 @@ import '../SCREENS/product_details_screen.dart';
 import '../SCREENS/sell_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../SCREENS/home_screen.dart';
+import '../SCREENS/HOME/home_screen.dart';
 import '../SCREENS/PROFILE/profile_screen.dart';
 import '../WIDGETS/chips_widget/cubit/chips_cubit.dart';
 import '../CONSTANTS/generic_classes.dart';

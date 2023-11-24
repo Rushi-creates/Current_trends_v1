@@ -13,8 +13,7 @@ class ProfileExpandedSliverCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-        child: Stack(
+    return Stack(
       alignment: Alignment.topCenter,
       children: [
         //1
@@ -46,7 +45,7 @@ class ProfileExpandedSliverCard extends StatelessWidget {
           ],
         )
       ],
-    ));
+    );
   }
 }
 

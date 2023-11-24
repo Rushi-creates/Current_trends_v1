@@ -14,6 +14,7 @@ class SearchScreen extends StatelessWidget {
           width: double.infinity,
           child:
               Column(crossAxisAlignment: CrossAxisAlignment.center, children: [
+            Align(alignment: Alignment.centerLeft, child: BackButton()),
             //@
             MyText(
               label: 'Search users',
